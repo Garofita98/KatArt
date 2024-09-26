@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>KatArt</title>
+       <link rel="stylesheet" href="/style.css" type="text/css"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+
+       <style>
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+  .section{
+   overflow-x: auto;
+   display: flex;
+   gap: 20px;
+   padding: 20px;
+   height: 550px;
+   margin-bottom: 40px;
+   margin-top: 20px;
+
+   
+   
+
+   
+   
+   
+   
+   
+   
+  }
+     .card{
+       flex: 0 0 auto;
+        width: 300px;
+       
+        background-color: #a5e5a5;
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0,4);
+        margin-right: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+         }
+
+
+     @media only screen and (max-width:1000px)
+     {
+        .section{
+            
+            width: 100%;
+        }
+        .card{
+            width: 50%;
+        }
+       
+     }
+     .image-section{
+        min-height: 250px;
+        border-start-start-radius: 20px;
+     }
+     .card .img-one{
+        background-image: url("image/img one.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     .card .img-two{
+        background-image: url("image/img two.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     } 
+     .card .img-three{
+        background-image: url("image/img trhee.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     .content{
+        text-align: center;
+        padding: 20px 15px;
+        
+       
+        
+        
+     }
+     .content h2{
+        letter-spacing: 2px;
+        color: aliceblue;
+     }
+     .content p{
+       display: flex;
+       text-overflow: ellipsis;
+       -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical;
+       padding: 10 14px;
+       color: #252525;
+       padding-top: 10px;
+       padding-bottom: 20px;
+      justify-content: center;
+      
+     }
+
+     
+     .content a{
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+        color: #222;
+        letter-spacing: 2px;
+        display: inline-block;
+        background-color: #d6c954;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+     }
+     .content a:hover{
+        background-color: #87803d;
+        transition: 1s ease;
+     }
+     .blog{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        display: inline-block;
+        padding: 10px ;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding-top: 300px;
+       
+     }
+     .title{
+        border-radius: 5px;
+     }
+     .HR{ padding-bottom: 20px;
+
+     }
+    
+
+       </style>
+       </head>
+<body>
+  <div class="body">
+       <font face="Freestyle Script">
+       <left>
+       <size="50">
+       <h1> 
+        <font color="#7FFFD4" size="30"> 
+       <img src="image/Logo KatArt.jpg" width="180" height="130"> 
+       </font> 
+       <HR color="#7FFFD4" width="20%" size="4%" align="left" >
+       <h/1>
+       </left>
+       </font face="Freestyle Script">
+       <BODY bgcolor="#000000"
+       <h2><marquee>Detaliile mici fac diferenta</marquee></h2>
+       <font color="#F0F8FF" size="30" font face="Freestyle Script"> 
+       
+<header>
+    <nav>
+        <ul class="list">
+        <li><a href="index.html" class="menu-item"> Home </a></li>
+        <li><a href="comenzi.html" class="menu-item">Comenzi</a></li>
+        <li><a href="galerie.html" class="menu-item">Galerie</a></li>
+        <li><a href="contact.html"  class="menu-item">Contact</a></li>
+        <div class="indicator"></div>
+    </nav>
+        </ul>
+
+        <style>
+         .list
+         {
+            
+            position: relative;
+            background-color:  #2f353a;
+            border-radius: 8px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow:0 2px 3px 0 rgba(0,0,0.1)
+            
+           
+         }     
+         .menu-item
+         {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            z-index: 2;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 25%;
+            background-color: rgb(170, 207, 167);
+            border-radius: 10px;
+            
+         }
+         .menu-item:hover
+         {
+            background-color: #568656;
+            transition: 0.5s ease;
+         }
+
+         .socials{
+            display:inline-flex;
+            justify-content: space-between;
+            padding: 50px 25px;
+            margin-left: 14%;
+            margin-right: 0.1%;
+            padding: 6px;
+         }
+
+         .social-link{
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(90deg, #e02450, #ff009b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 50%;
+            transition: scale (0.15s);
+            
+            
+         }
+         .social-link:hover{
+            transform: translate(0, -5px);
+            color: #d9c2c7;
+         }
+         .socials-link ::after{
+            content: icon ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: 50%;
+            opacity: 0;
+            transform:scale (0.95s);
+            pointer-events: none;
+        }
+        .socials-link:hover::after{
+            animation: pulse 1s;
+    
+        }
+        @keyframes socials {
+            0%{
+                opacity: (0.8s);
+        }
+            50%{
+
+            }
+            100%{
+               transform: scale 1s;
+                opacity: 0;
+            }
+        }
+
+            .box{
+              position: relative;
+              width: 100px;
+              max-width: 600px;
+              margin: 0 auto;
+                position: relative;
+                width: 150px;
+                height: 250px;
+                transform-style: preserve-3d;
+                animation: animate 20s linear infinite;
+                
+                
+            }
+            @keyframes animate{
+                0%{
+                    transform: perspective(1000px) rotateY(0deg);
+                }
+                100%{
+                    transform: perspective(1000px) rotateY(360deg);
+                }
+            }
+        
+            .box span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-origin: center;
+                transform-style: preserve-3d;
+                transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+                -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, #0004);
+                
+            }
+            .box span img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                padding-top: 100px;
+            }
+            .paragraph{
+                text-align: justify;
+                display: flex;
+                width: 100%;
+                padding-right: 50%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .Blog-heading h2 {
+                margin-top: 20px;
+                font-family: 'Sacramento', cursive;
+                font-size: 30px;
+                text-shadow: 1px 1px 1px rgba(107, 250, 199, 0.9);
+            
+                
+                
+            }
+            .body{
+              overflow:hidden ;
+            }
+            .elements{
+                display: flex;
+            }
+
+            .description {
+            background-color: rgba(105, 241, 195, 0.6); /* Fundal alb transparent */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 80px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .description h3 {
+            margin-bottom: 20px; /* Adaugăm o margine mai mare între titlu și text */
+            font-family: 'Sacramento', cursive;
+            font-size: 36px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        .description p {
+            font-size: 18px; /* Dimensiune text */
+            line-height: 1.6;
+        }
+         </style>
+
+</header> 
+<!-----------------------3D Rotation efect------------>
+<div class="box">
+     
+    <span style="--i:1;"><img src="image/furca.jpg"></span>
+    <span style="--i:2;"><img src="image/Tipatul.jpg"></span>
+    <span style="--i:3;"><img src="image/MonaLisa.jpg"></span>
+    <span style="--i:4;"><img src="image/pipa.jpg"></span>
+    <span style="--i:5;"><img src="image/tarancuta.jpg"></span>
+    <span style="--i:6;"><img src="image/caspar.jpg"></span>
+    <span style="--i:7;"><img src="image/picaso.jpg"></span>
+    <span style="--i:8;"><img src="image/cal.jpg"></span>
+    
+
+</div>
+
+
+
+<div class="blog">
+    <div class="description">
+        <h3><center>Bine ați venit la KatArt!</center></h3>
+        <p>Explorați lumea creațiilor handmade la KatArt, unde fiecare piesă spune o poveste unică. Descoperiți tablouri pictate manual, tricouri personalizate, origami complexe și semne de carte artisanale. Fiecare creație este realizată cu pasiune și grijă, reflectând o mare dedicare pentru artă și creativitate.</p>
+        
+    </div>
+
+    <!-------------------------Blog Section--------------------------->
+    <section id="Blog">
+    <!---------------------Heading-------------------------------->
+    <div class="Blog-heading">
+        <center><span><h2>My recent posts</h2></span>
+        
+</div>
+
+
+<!----------------------Blog container-------------------------->
+<div class="section">
+    <div class="card">
+        <div class="image-section img-one"></div>
+        <div class="content">
+            <h2>Introducere în lumea artei: Cum am început să desenez</h2>
+            <p>Dacă ai ajuns pe această pagină, probabil te-ai așezat confortabil cu 
+             o cană de cafea sau ceai, gata să parcurgi câteva rânduri despre drumul 
+             meu în arta desenului.</p>
+            <a href="articol 1.html" class="button">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class=></div>
+        <div class="content">
+            <h2>...</h2>
+            <p>?</p>
+            <a href="" class="button">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class=></div>
+        <div class="content">
+            <h2>...</h2>
+            <p>?</p>
+            <a href="" class="button">Read More</a>
+        </div>
+    </div>   
+
+</div>
+
+
+
+
+
+  <!-----------------Social Media---------------------------------->
+  <div class="elements">
+  <div class="socials">
+    <a href="https://www.instagram.com/garofitabalan?igsh=Z3hjeGlwMnR0Yzdq" class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    </div>
+
+  <div class="socials">
+    <a href="https://www.facebook.com/GarofitaBalan98" class="social-link">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    </div>
+
+
+  <div class="socials">
+    <a href="https://www.tiktok.com/@garofita.balan?_t=8iryH6fyBFZ&_r=1" class="social-link">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+    </div>
+
+
+<div class="socials">
+  <a href="https://youtube.com/@garofitabalan2138?si=1ggwI2pSYzjoSKnT" class="social-link">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+  </div>
+  </div>
+  
+   </div>
+   </div>
+  </div>
+ </body>
+</html>

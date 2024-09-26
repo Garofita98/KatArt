@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" type="text/css"> 
+
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #000000;
+    }
+
+    header {
+        padding: 20px;
+        background-color: #2f353a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        flex-grow: 1;
+    }
+
+    header ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        background-color: rgb(170, 207, 167);
+        border-radius: 10px;
+        transition: background-color 0.5s ease;
+    }
+
+    .menu-item:hover {
+        background-color: #568656;
+    }
+
+    .gallery, .gallery-t-shirt, .gallery-bookmarks, .gallery-swan{
+        display: flex;
+        overflow-x: auto;
+        padding: 20px;
+        margin-bottom: 40px; /* Margin pentru distanțare între galerii */
+    }
+
+    .gallery .item, .gallery-t-shirt .item, .gallery-bookmarks .item, .gallery-swan .item{
+        flex: 0 0 auto;
+        width: 200px;
+        margin-right: 20px;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    .gallery .item img, .gallery-t-shirt .item img,  .gallery-bookmarks .item img, .gallery-swan .item img{
+        width: 100%;
+        height: 200px; /* Setăm o înălțime fixă pentru a asigura consistența */
+        object-fit: cover;
+        border-radius: 10px 10px 0 0; /* Rotunjim doar colțurile de sus */
+    }
+
+    .gallery .item p, .gallery-t-shirt .item p, .gallery-bookmarks .item p, .gallery-swan .item p {
+        color: #000;
+        margin: 10px 0;
+    }
+
+    .gallery-title, .gallery-t-shirt-title, .gallery-bookmarks-title, .gallery-swan-title {
+        text-align: center;
+        font-family: 'Sacramento', cursive;
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    /* Stiluri pentru dispozitive mobile */
+    @media (max-width: 768px) {
+        header {
+            padding: 10px;
+        }
+
+        header ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header ul li {
+            margin: 10px 0;
+        }
+
+        .menu-item {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+
+        .gallery, .gallery-t-shirt, .gallery-bookmarks, .gallery-swan{
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .gallery .item, .gallery-t-shirt .item, .gallery-bookmarks .item, .gallery-swan .item{
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        .gallery .item img, .gallery-t-shirt .item img, .gallery-bookmarks .item img, .gallery-swan .item img{
+            height: auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 5px;
+        }
+
+        .menu-item {
+            font-size: 12px;
+            padding: 8px 12px;
+        }
+
+        .gallery, .gallery-t-shirt, .gallery-bookmarks, .gallery-swan{
+            padding: 5px;
+        }
+
+        .gallery .item, .gallery-t-shirt .item, .gallery-bookmarks .item, .gallery-swan .item {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+        .note{
+            background-color: rgba(105, 241, 195, 0.6); /* Fundal alb transparent */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 80px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .note h3 {
+            margin-bottom: 20px; /* Adaugăm o margine mai mare între titlu și text */
+            font-family: 'Sacramento', cursive;
+            font-size: 46px;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.779);
+            margin-top: 10px;
+        }
+        .note p {
+            font-size: 19px; /* Dimensiune text */
+            line-height: 1.6;
+            color: aliceblue;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="list">
+                <li><a href="index.html" class="menu-item">Home</a></li>
+                <li><a href="comenzi.html" class="menu-item">Comenzi</a></li>
+                <li><a href="galerie.html" class="menu-item">Galerie</a></li>
+                <li><a href="contact.html" class="menu-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tablouri de vanzare -->
+    <h2 class="gallery-title">Tablouri de vânzare</h2>
+    <div class="gallery">
+        <div class="item"><a href="Cod 0001 detalii.html"><img src="image/Fotografia-1.jpg" alt="img 1"><p>Cod 0001</p></a></div>
+        <div class="item"><a href="Cod 0002 detalii.html"><img src="image/Fotografia-2.jpg" alt="img 2"><p>Cod 0002</p></a></div>
+        <div class="item"><a href="Cod 0003 detalii.html"><img src="image/Fotografia-3.jpg" alt="img 3"><p>Cod 0003</p></a></div>
+        <div class="item"><a href="Cod 0004 detalii.html"><img src="image/Fotografia-4.jpg" alt="img 4"><p>Cod 0004</p></a></div>
+        <div class="item"><a href="Cod 0005 detalii.html"><img src="image/kermitthefrog.jpg" alt="img 5"><p>Cod 0005</p></a></div>
+        <div class="item"><a href="Cod 0006 detalii.html"><img src="image/spiritedaway.jpg" alt="img 6"><p>Cod 0006</p></a></div>
+        <div class="item"><a href="Cod 0007 detalii.html"><img src="image/puppy paint.jpg" alt="img 7"><p>Cod 0007</p></a></div>
+    </div>
+
+    <!-- Tricouri pictate -->
+    <h2 class="gallery-t-shirt-title">Tricouri pictate</h2>
+    <div class="gallery-t-shirt">
+        <div class="item"><a href="Cod T 0001 detalii.html"><img src="image/tricou cuplu.jpg" alt="img 1"><p>Cod T 0001</p></a></div>
+        <div class="item"><a href="Cod T 0002 detalii.html"><img src="image/tricou cuplu cute.jpg" alt="img 2"><p>Cod T 0002</p></a></div>
+        <div class="item"><a href="Cod T 0003 detalii.html"><img src="image/Noprobllama.jpg" alt="img 3"><p>Cod T 0003</p></a></div>
+        <div class="item"><a href="Cod T 0004 detalii.html"><img src="image/girafa.jpg" alt="img 4"><p>Cod T 0004</p></a></div>
+        <div class="item"><a href="Cod T 0005 detalii.html"><img src="image/tricou anime.jpg" alt="img 5"><p>Cod T 0005</p></a></div>
+    </div>
+    
+    <!-- Semne de carte -->
+    <h2 class="gallery-bookmarks-title">Semne de carte</h2>
+    <div class="gallery-bookmarks">
+        <div class="item"><a href="Cod SC 0001 detalii.html"><img src="image/bookmark 1.jpg" alt="img 1"><p>Cod SC 0001</p></a></div>
+        <div class="item"><a href="Cod SC 0002 detalii.html"><img src="image/bookmark 2.jpg" alt="img 2"><p>Cod SC 0002</p></a></div>
+        <div class="item"><a href="Cod SC 0003 detalii.html"><img src="image/bookmark 3.jpg" alt="img 3"><p>Cod SC 0003</p></a></div>
+        <div class="item"><a href="Cod SC 0004 detalii.html"><img src="image/bookmark 4.jpg" alt="img 4"><p>Cod SC 0004</p></a></div>
+        
+    </div>
+
+    <h2 class="gallery-swan-title">Lebede Origami</h2>
+    <div class="gallery-swan">
+        <div class="item"><a href="Cod L 0001 detalii.html"><img src="image/Lebada 1.jpg" alt="img 1"><p>Cod L 0001</p></a></div>
+    </div>
+        <div class="note">
+            <h3><center>Notă</center></h3>
+            <p>Tricourile, semnele de carte și lebedele origami sunt prezentate doar ca poze de referință. Acestea au fost deja vândute. Dacă doriți un model asemănător, îmi puteți menționa codul aferent lucrării dorite.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comenzi</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+    <style>
+       .div {
+           background-color: rgb(43, 137, 106);
+       } 
+       .list {
+           position: relative;
+           background-color:  #2f353a;
+           border-radius: 8px;
+           list-style: none;
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           box-shadow: 0 2px 3px 0 rgba(0,0,0.1);
+       }     
+       .menu-item {
+           position: relative;
+           display: block;
+           text-decoration: none;
+           color: #fff;
+           font-weight: 400;
+           text-transform: uppercase;
+           padding: 15px 20px;
+           z-index: 2;
+           text-align: center;
+           font-family: sans-serif;
+           font-size: 25%;
+           background-color: rgb(170, 207, 167);
+           border-radius: 10px;
+       }
+       .menu-item:hover {
+           background-color: #568656;
+           transition: 0.5s ease;
+       }
+       .body {
+           background-color: black;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+           margin: 0;
+       }
+       .formular {
+           background-image: url(image/fundal.jpg);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-attachment: fixed;
+           background-size: cover;
+           height: 100vh;
+           margin: 0;
+           background-color: rgba(255,255,255,0.8);
+           padding: 20px;
+           border-radius: 10px;
+           text-align: center;
+       }
+       .label {
+           display: block;
+           margin-top: 10px;
+       }
+       input[type="submit"],
+       input[type="file"] {
+           margin-top: 10px;
+       }
+       textarea {
+           margin-top: 20px;
+       }
+       .center-form {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-top: 50px;
+       }
+       .input-group {
+           display: flex;
+           align-items: center;
+           margin-bottom: 10px;
+       }
+       .input-group label {
+           text-align: right;
+           margin-right: 10px;
+           width: 120px;
+       }
+    </style>
+</head>
+<body class="formular">
+
+<nav>
+    <ul class="list">
+        <li><a href="index.html" class="menu-item">Home</a></li>
+        <li><a href="comenzi.html" class="menu-item">Comenzi</a></li>
+        <li><a href="galerie.html" class="menu-item">Galerie</a></li>
+        <li><a href="contact.html" class="menu-item">Contact</a></li>
+        <div class="indicator"></div>
+    </ul>
+</nav>
+
+<form action="process_form.php" method="post">
+    <div class="center-form">
+        <div class="input-group">
+            <label for="nume">Nume:</label>
+            <input id="nume" name="nume" type="text" required>
+        </div>
+        <br>
+
+        <div class="input-group">
+            <label for="prenume">Prenume:</label>
+            <input id="prenume" name="prenume" type="text" required>
+        </div>
+        <br>
+
+        <div class="input-group">
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" required>
+        </div>
+        <br>
+
+        <div class="input-group">
+            <label for="telefon">Nr telefon:</label>
+            <input id="telefon" name="telefon" type="text" required>
+        </div>
+        <br>
+        <p>Introduceți codul aferent tabloului dorit din secțiunea "galerie" sau inserați informații legate de detaliile tabloului care doriți să fie realizat. Pentru doritorii unui tricou pictat manual introduceți detalii precum: măsura tricoului, culoarea tricoului dorită, imagini de referință sau descrierea în detaliu a desenului ce se dorește a fi pictat.</p>
+        <div>
+            <label for="descriere">Descriere:</label>
+            <textarea name="descriere" id="descriere" cols="30" rows="5" required></textarea>
+        </div>
+        <br>
+        <input type="file" id="file"/>
+        <br>
+        <input type="submit" value="Trimite">
+    </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    
+        <header>
+            <nav>
+                <ul class="list">
+                <li><a href="index.html" class="menu-item"> Home </a></li>
+                <li><a href="comenzi.html" class="menu-item">Comenzi</a></li>
+                <li><a href="galerie.html" class="menu-item">Galerie</a></li>
+                <li><a href="contact.html"  class="menu-item">Contact</a></li>
+                <div class="indicator"></div>
+            </nav>
+                </ul>
+
+
+       <div class="contact-info">
+        <div class="card">
+            <i class="card-icon far fa-envelope"></i>
+            <p>katart.handmadeoffice@gmail.com</p>
+        </div>
+
+
+        <div class="card">
+            <i class="card-icon fas fa-phone"></i>
+            <p>+40720761607</p>
+        </div>
+
+
+        <div class="card">
+            <i class="card-icon fas fa-map-marker-alt"></i>
+            <p>Bucuresti, Sector 3</p>
+        </div>
+
+
+
+       </div>         
+
+                <style>
+                    .body{
+                       
+                        min-height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                    
+
+                    .contact-info{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 20px;
+                        padding-top: 50px;
+                        background-image: url('image/fundal.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        height: 100vh;
+
+                    }
+
+                    .card{
+                        background: #2f3542;
+                        padding: 0 20px;
+                        margin: 0 10px;
+                        width: calc(33% - 20px);
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                    }
+
+                    .card-icon{
+                        font-size: 28px;
+                        background: #7bbe81;
+                        width: 60px;
+                        height: 60px;
+                        text-align: center;
+                        line-height: 60px;
+                        border-radius: 50%;
+                        transition: 0.3s linear;
+                    }
+                    
+                    .card-hover .card-icon{
+                        background: none;
+                        color:#7bbe81 ;
+                        transform: scale(1.6);
+                    }
+
+                    .card p{
+                        margin-top: 20px;
+                        font-weight: 300;
+                        letter-spacing: 2px;
+                        max-height: 0;
+                        opacity: 0;
+                        transition: 0.3s linear;
+                    }
+
+                    .card:hover p{
+                        max-height: 40px;
+                        opacity: 1;
+
+                    }
+
+                    @media screen and (max-width:800px) {
+                     .contact-info{
+                        flex-direction: column;
+                     }
+                     .card{
+                        width: 100%;
+                        max-width: 300px;
+                        margin: 10px 0;
+                     }
+                    }
+
+
+
+                    .list
+                    {
+                       position: relative;
+                       background-color:  #2f353a;
+                       border-radius: 8px;
+                       list-style: none;
+                       display: flex;
+                       align-items: center;
+                       justify-content: space-around;
+                       box-shadow:0 2px 3px 0 rgba(0,0,0.1)
+                    }     
+                    .menu-item
+                    {
+                       position: relative;
+                       display: block;
+                       text-decoration: none;
+                       color: #fff;
+                       font-weight: 400;
+                       text-transform: uppercase;
+                       padding: 15px 20px;
+                       z-index: 2;
+                       text-align: center;
+                       font-family: sans-serif;
+                       font-size: 25%;
+                       background-color: rgb(170, 207, 167);
+                       border-radius: 10px;
+                    }
+                    .menu-item:hover
+                    {
+                       background-color: #568656;
+                       transition: 0.5s ease;
+                    }
+            </style>
+        </header>
+    </body>
+</html>

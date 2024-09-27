@@ -17,10 +17,21 @@
             box-sizing: border-box;
         }
 
-        @media (max-width: 1000px) {
-  .container {
-    width: 100%;
-  }
+      @media only screen and (max-width:1000px)
+
+     {
+
+     .section{
+     width: 100%;
+
+    }
+
+    .card{
+    width: 50%;
+
+        }
+ }
+        
     .card{
         max-width:100%;
         min-width:75%;
@@ -28,21 +39,29 @@
         }
 
         .section{
-width:75px;
-margin:75px auto;
-display:grid;
-grid-template-columns:repeat (auto-fit, minmax (250px, 1fr));
-grid-gap:25px;
-height: 550px;
-}
 
-.card{
-  flex: 0 0 auto;
-  max-width:300px;
-  overflow: hidden;
-  background-color: #a5e5a5;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0, 4);
-}
+   overflow-x: auto;
+
+   display: flex;
+
+   gap: 20px;
+
+   padding: 20px;
+
+   height: 550px;
+
+   margin-bottom: 40px;
+
+   margin-top: 20px;
+ }
+
+     .card{
+
+     flex: 0 0 auto;
+     width: 300px;
+     background-color: #a5e5a5;
+     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0,4);
+     }
 
  .image-section {
    min-height: 250px;

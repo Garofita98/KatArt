@@ -88,11 +88,15 @@
     margin: 0 auto 40px auto;
 }
 .image-container {
-        display: flex;
-        flex-wrap: nowrap; 
-        gap: 10px;
-        max-width: 100%;
-        overflow-x: hidden;
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 10px; 
+    justify-content: space-around;
+}
+.image-container img{
+    flex: 0 0 auto; 
+    max-width: 45%; 
+    height: auto; 
 }
 @media (min-width: 1200px) {
     .image-container {
